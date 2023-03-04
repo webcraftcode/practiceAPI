@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment In API </title>
+
+    <!-- cdn connected -->
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.3/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+   
+    </style>
+</head>
+
+<body>
+    <header class="mt-12 mb-16 text-center">
+        <h2 class="text-3xl font-semibold mb-5">AI Universe Hub </h2>
+        <button id="Short" class="btn btn-secondary">Short By Date</button>
+        <hr class="w-8/12 mt-5 bg-danger-600 h-1 mx-auto">
+    </header>
+    <main class="container mx-auto">
+
+        <div id="main_containerBy_card" class=" grid md:grid-cols-3 grid-cols-1 lg:grid-cols-3 gap-4">
+
+        </div>
+        <div class="text-center">
+            <button id="showAllBtn" class="btn btn-secondary">Show All</button>
+        </div>
+
+
+        <!-- modal er kaj start  -->
+        <!-- The button to open modal -->
+   
+        <divid="model-container">
+       
+        <input type="checkbox" id="my-modal-5" class="modal-toggle" />
+        <div class="modal overflow-hidden"> 
+                
+          <div class="modal-box w-11/12 max-w-5xl">
+            
+            <div class="card lg:card-side bg-base-100 ">   
+                <div class="card-body grid md:grid-cols-2">
+                <div class="border bg-orange-100 p-5">
+                    <h2 id="cardTitle" class="card-title"></h2>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-2 items-center text-center mt-5">
+                        <div id="price1" class="shadow-sm rounded border p-5 bg-white">One</div>
+                        <div id="price2" class="shadow-sm rounded border p-5 bg-white">One</div>
+                        <div id="price3" class="shadow-sm rounded border p-5 bg-white">One</div>
+                    </div>
+                    <div class="grid md:grid-cols-2 grid-cols-1 mt-16 gap-10">
+                        <div class="border p-2">
+                            <h2 class="font-bold text-2xl">Features</h2>
+                            <ul>
+                                <li id="f1" class="font-semibold">one</li>
+                            
+                            </ul>
+                        </div>
+                        <div class="border p-2">
+                            <h2 class="font-bold text-2xl">Integrations</h2>
+                            <ul>
+                                <li id="i1" class="font-semibold">one</li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+                <div>
+
+                    <figure> <div id="img"></div></figure>
+                    <h2 id="titleByImg" class="text-center font-bold text-4xl mt-5 mb-5"></h2>
+                    <p class="text-center" id="output"></p>
+                </div>              
+
+                </div>
+                
+              </div>
+
+            <div class="modal-action">
+              <label for="my-modal-5" class=""><img src="./image/Group 38.png" alt=""></label>
+            </div>
+          </div>
+        </div>
+
+    </div>
+
+
+    </main>
+    <!-- js connected  -->
+    <script src="./app.js"></script>
+</body>
+
+</html>
